@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/* 메인 슬라이드 */
+.m_slide img{
+  width: 100%; max-width: 768px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+.swiper-pagination-bullet-active {
+  background: #f7f1e5; /* 원하는 메인 색상으로 변경 */
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f7f1e5; /* 원하는 색상 */
+}
+
+/* 쇼핑 슬라이드 */
+.Shop_wrap{
+  background: #f7f1e5;
+  text-align: center;
+}
+.Shop_wrap > img{
+  width: 44px;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+.Shop_wrap h2{
+  font-size: 32px;
+  color: #646464;
+  font-weight: normal;
+  letter-spacing: -3px;
+  margin-bottom: 20px;
+}
+.Shop_wrap h2 span{
+  font-weight: bold;
+}
+.Shop_wrap > button{
+  background: none;
+  border: 1px solid #646464;
+  width: 30%; height: 2.2rem;
+  color: #646464;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.shop-inner{
+  position: relative;
+  width: 95%;
+  margin: 40px auto;
+  display: flex;
+}
+.shop-inner > img{
+  width: 50%; margin:0 20px;
+  max-width: 282px;
+  border-radius: 10px;
+}
+.product_info{
+  padding: 10px 0px;
+}
+.product_info p{
+  text-align: left;
+}
+.product_info .cate{
+  font-size: .8rem;
+  color: #575757;
+}
+.product_info .title{
+  font-size: .92rem;
+  font-weight: 500;
+  color: #575757;
+  line-height: 1.4rem;
+  margin-top: .4rem;
+}
+.product_info .price{
+  font-size: .8rem;
+  font-weight: 400;
+  color: #575757;
+  line-height: 2rem;
+}
+.product_info .price span{
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #eb4823;
+  line-height: 1.3rem;
+}
+.product_button{
+  width: fit-content;
+}
+.product_button > button{
+  position: relative;
+  background: #f00;
+  border: none;
+  width: 30px; height: 30px;
+  border-radius: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.product_button > button > img{
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  z-index: 5;
+}
+
+/* 스토리, 인스타 */
+.Story{
+  height: 470px;
+  background: #fff;
+  text-align: center;
+  position: relative;
+}
+.Story > img{
+width: 59px;
+padding-top: 50px;
+margin-bottom: 20px;
+}
+.Story h2{
+  font-size: 32px;
+  color: #646464;
+  font-weight: normal;
+  letter-spacing: -3px;
+  margin-bottom: 20px;
+}
+.Story h2 span{
+  font-weight: bold;
+}
+.Story > p{
+  color: #646464;
+}
+.Story > button{
+  position: relative;
+  margin-top: 20px;
+  background: none;
+  border: 1px solid #646464;
+  width: 30%; height: 2.2rem;
+  color: #646464;
+  font-size: 1rem;
+  z-index: 1;
+  cursor: pointer;
+}
+.Story .StoryImage{
+  position: absolute;
+  width: 350px;
+  bottom: 0px; left: 50%;
+  transform: translate(-50%, 36px);
+  padding: 0; margin: 0;
+}
+
+.Insta{
+  background: #ede9e8;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.Insta .insta_title{
+  width: fit-content;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.Insta .insta_title > img{
+  width: 38px;
+  margin-right: 10px;
+}
+.Insta .insta_title h2{
+  color:#646464;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: -1px;
+}
+.Insta .insta_title h2 span{
+  font-weight: bold;
+}
+.Insta > p{
+  color: #646464;
+  font-size: .9rem;
+  padding-bottom: 20px;
+}
+.Insta .sns{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.Insta .sns img{
+  width:45%;
+}
+.Insta .sns img:last-child{
+  cursor: pointer;
+}
+.Insta .sns img:last-child:hover{
+  opacity: 0.5;
+}
