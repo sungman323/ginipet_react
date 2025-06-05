@@ -37,7 +37,7 @@ function Join(props) {
 
     //서버측에 POST방식으로 데이터값을 전달한다.
     try{
-      await axios.post(`${process.env.REACT_APP_API_URL}/g_register`,{
+      await axios.post('https://port-0-db-react-back-mbeer0yi973d87dd.sel4.cloudtype.app/g_register',{
         username:form.username,
         password:form.password,
         tel:form.tel,

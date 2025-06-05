@@ -26,7 +26,7 @@ function Login(props) {
     e.preventDefault();
 
     try{ //입력이 성공하면 db server로 전송
-      const res = await axios.post(`${process.env.REACT_APP_API_URL}/g_login`, form);
+      const res = await axios.post('https://port-0-db-react-back-mbeer0yi973d87dd.sel4.cloudtype.app/g_login', form);
 
       //사용자 인증이 끝나면 '토큰'을 생성
       localStorage.setItem('token', res.data.token);
